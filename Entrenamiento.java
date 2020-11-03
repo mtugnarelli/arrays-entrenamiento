@@ -25,6 +25,12 @@ public class Entrenamiento {
 			throw distanciaInvalida;
 		}
 		
+		if ((dia < 1) || (dia > recorridos.length)) {
+			
+			Error diaInvalido = new Error("Día invalido: " + dia);
+			throw diaInvalido;
+		}
+		
 		recorridos[dia - 1] = distancia; 
 	}
 	
