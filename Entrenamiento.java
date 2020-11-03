@@ -1,6 +1,8 @@
 
 public class Entrenamiento {
 
+	private double[] recorridos = new double[5];
+	
 	private double recorrido1;
 	private double recorrido2;
 	private double recorrido3;
