@@ -26,4 +26,12 @@ public class PruebaEntrenamiento {
 		
 		entrenamiento.registrarRecorrido(1, -2);
 	}
+	
+	@Test(expected = Error.class)
+	public void registrarRecorridoParaElDia6() {
+		
+		Entrenamiento entrenamiento = new Entrenamiento();
+		
+		entrenamiento.registrarRecorrido(6, 5);
+	}
 }
