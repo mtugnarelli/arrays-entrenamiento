@@ -1,7 +1,22 @@
 
 public class Entrenamiento {
 
-	private double[] recorridos = new double[5];
+	private double[] recorridos;
+	
+	/**
+	 * pre : 'cantidadDeDias' es mayor a 0.
+	 * post: entrenamiento listo para registrar las distancias
+	 * 		 recorridas en 'cantidadDeDias' 
+	 * @param cantidadDeDias
+	 */
+	public Entrenamiento(int cantidadDeDias) {
+		
+		if (cantidadDeDias < 1) {
+			throw new Error("La cantidad de días debe ser mayor a 0");
+		}
+		
+		recorridos = new double[cantidadDeDias];
+	}
 	
 	/**
 	 * pre : 'dia' está en rango [1-5] y 'distancia' es mayor o igual a 0.
@@ -23,7 +38,7 @@ public class Entrenamiento {
 			Error diaInvalido = new Error("Día invalido: " + dia);
 			throw diaInvalido;
 		}
-		
+
 		recorridos[dia - 1] = distancia; 
 	}
 	
