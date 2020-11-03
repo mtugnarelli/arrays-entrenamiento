@@ -24,21 +24,21 @@ public class Entrenamiento {
 			Error distanciaInvalida = new Error("La distancia no puede ser menor 0");
 			throw distanciaInvalida;
 		}
-
+		
 		if (dia == 1) {
-			recorrido1 = distancia;
-			
+			recorridos[0] = distancia;
+
 		} else if (dia == 2) {
-			recorrido2 = distancia;
-			
+			recorridos[1] = distancia;
+
 		} else if (dia == 3) {
-			recorrido3 = distancia;
+			recorridos[2] = distancia;
 			
 		} else if (dia == 4) {
-			recorrido4 = distancia;
+			recorridos[3] = distancia;
 			
 		} else if (dia == 5) {
-			recorrido5 = distancia;
+			recorridos[4] = distancia;
 			
 		}
 	}
