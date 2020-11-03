@@ -7,6 +7,18 @@ public class Entrenamiento {
 	private double recorrido4;
 	private double recorrido5;
 	
+
+	/**
+	 * pre : 'dia' está en rango [1-5] y 'distancia' es mayor o igual a 0.
+	 * post: registra la distancia recorrida en el día indicado. 
+	 * 
+	 * @param dia
+	 * @param distancia
+	 */
+	public void registrarRecorrido(int dia, double distancia) {
+		
+	}
+	
 	/**
 	 * post: devuelve el promedio de las distancias recorridas [Km].
 	 */
