@@ -7,6 +7,9 @@ public class Entrenamiento {
 	double recorrido4;
 	double recorrido5;
 	
+	/**
+	 * post: devuelve el promedio de las distancias recorridas [Km].
+	 */
 	double calcularRecorridoPromedio() {
 		
 		return (recorrido1 + recorrido2 + 
