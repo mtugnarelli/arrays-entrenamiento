@@ -57,20 +57,11 @@ public class Entrenamiento {
 		
 		double maximo = recorridos[0];
 		
-		if (recorridos[1] > maximo) {
-			maximo = recorridos[1];
-		} 
-		
-		if (recorridos[2] > maximo) {
-			maximo = recorridos[2];
-		}
-		
-		if (recorridos[3] > maximo) {
-			maximo = recorridos[3];
-		}
-		
-		if (recorridos[4] > maximo) {
-			maximo = recorridos[4];
+		for (int i = 1; i < recorridos.length; i++) {
+			
+			if (recorridos[i] > maximo) {
+				maximo = recorridos[i];
+			} 
 		}
 
 		return maximo;
