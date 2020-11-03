@@ -57,6 +57,24 @@ public class Entrenamiento {
 	 */
 	public double buscarRecorridoMaximo() {
 		
+		double maximo = recorrido1;
 		
+		if (recorrido2 > maximo) {
+			maximo = recorrido2;
+		} 
+		
+		if (recorrido3 > maximo) {
+			maximo = recorrido3;
+		}
+		
+		if (recorrido4 > maximo) {
+			maximo = recorrido4;
+		}
+		
+		if (recorrido5 > maximo) {
+			maximo = recorrido5;
+		}
+
+		return maximo;
 	}
 }
