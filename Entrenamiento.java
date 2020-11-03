@@ -39,9 +39,14 @@ public class Entrenamiento {
 	 */
 	public double calcularRecorridoPromedio() {
 		
-		return (recorrido1 + recorrido2 + 
-				recorrido3 + recorrido4 + 
-				recorrido5) / 5;
+		double recorridoTotal = 0;
+		
+		for (int i = 0; i < recorridos.length; i++) {
+			
+			recorridoTotal = recorridoTotal + recorridos[i];
+		}
+
+		return (recorridoTotal / recorridos.length);
 	}
 	
 	/**
