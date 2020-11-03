@@ -25,22 +25,7 @@ public class Entrenamiento {
 			throw distanciaInvalida;
 		}
 		
-		if (dia == 1) {
-			recorridos[0] = distancia;
-
-		} else if (dia == 2) {
-			recorridos[1] = distancia;
-
-		} else if (dia == 3) {
-			recorridos[2] = distancia;
-			
-		} else if (dia == 4) {
-			recorridos[3] = distancia;
-			
-		} else if (dia == 5) {
-			recorridos[4] = distancia;
-			
-		}
+		recorridos[dia - 1] = distancia; 
 	}
 	
 	/**
