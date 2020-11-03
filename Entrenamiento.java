@@ -50,4 +50,13 @@ public class Entrenamiento {
 				recorrido3 + recorrido4 + 
 				recorrido5) / 5;
 	}
+	
+	/**
+	 * post: devuelve la distancia máxima de los recorridos registrados.
+	 * 
+	 */
+	public double buscarRecorridoMaximo() {
+		
+		
+	}
 }
