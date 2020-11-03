@@ -17,6 +17,12 @@ public class Entrenamiento {
 	 */
 	public void registrarRecorrido(int dia, double distancia) {
 		
+		if (distancia < 0.0) {
+			
+			Error distanciaInvalida = new Error("La distancia no puede ser menor 0");
+			throw distanciaInvalida;
+		}
+
 		if (dia == 1) {
 			recorrido1 = distancia;
 			
