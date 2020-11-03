@@ -17,6 +17,22 @@ public class Entrenamiento {
 	 */
 	public void registrarRecorrido(int dia, double distancia) {
 		
+		if (dia == 1) {
+			recorrido1 = distancia;
+			
+		} else if (dia == 2) {
+			recorrido2 = distancia;
+			
+		} else if (dia == 3) {
+			recorrido3 = distancia;
+			
+		} else if (dia == 4) {
+			recorrido4 = distancia;
+			
+		} else if (dia == 5) {
+			recorrido5 = distancia;
+			
+		}
 	}
 	
 	/**
