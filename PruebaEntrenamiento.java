@@ -18,4 +18,12 @@ public class PruebaEntrenamiento {
 		
 		Assert.assertEquals(10, promedio, 0.1);
 	}
+	
+	@Test
+	public void registrarRecorridoMenos2LanzaUnaExcepcion() {
+		
+		Entrenamiento entrenamiento = new Entrenamiento();
+		
+		entrenamiento.registrarRecorrido(1, -2);
+	}
 }
