@@ -8,11 +8,11 @@ public class PruebaEntrenamiento {
 	public void calcularRecorridoPromedioConEntrenamientoRegularDe10Km() {
 		
 		Entrenamiento entrenamiento = new Entrenamiento();
-		entrenamiento.recorrido1 = 10;
-		entrenamiento.recorrido2 = 10;
-		entrenamiento.recorrido3 = 10;
-		entrenamiento.recorrido4 = 10;
-		entrenamiento.recorrido5 = 10;
+		entrenamiento.registrarRecorrido(1, 10);
+		entrenamiento.registrarRecorrido(2, 10);
+		entrenamiento.registrarRecorrido(3, 10);
+		entrenamiento.registrarRecorrido(4, 10);
+		entrenamiento.registrarRecorrido(5, 10);
 		
 		double promedio = entrenamiento.calcularRecorridoPromedio();
 		
