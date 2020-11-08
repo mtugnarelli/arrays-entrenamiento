@@ -7,7 +7,7 @@ public class PruebaEntrenamiento {
 	@Test
 	public void calcularRecorridoPromedioConEntrenamientoRegularDe10Km() {
 		
-		Entrenamiento entrenamiento = new Entrenamiento();
+		Entrenamiento entrenamiento = new Entrenamiento(5);
 		entrenamiento.registrarRecorrido(1, 10);
 		entrenamiento.registrarRecorrido(2, 10);
 		entrenamiento.registrarRecorrido(3, 10);
@@ -22,7 +22,7 @@ public class PruebaEntrenamiento {
 	@Test(expected = Error.class)
 	public void registrarRecorridoMenos2LanzaUnaExcepcion() {
 		
-		Entrenamiento entrenamiento = new Entrenamiento();
+		Entrenamiento entrenamiento = new Entrenamiento(5);
 		
 		entrenamiento.registrarRecorrido(1, -2);
 	}
@@ -30,7 +30,7 @@ public class PruebaEntrenamiento {
 	@Test(expected = Error.class)
 	public void registrarRecorridoParaElDia6() {
 		
-		Entrenamiento entrenamiento = new Entrenamiento();
+		Entrenamiento entrenamiento = new Entrenamiento(5);
 		
 		entrenamiento.registrarRecorrido(6, 5);
 	}
